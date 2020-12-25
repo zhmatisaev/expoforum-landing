@@ -1,0 +1,317 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;       /*берилген шрифттин аталышы*/
+	box-sizing: border-box;  /*применяется для изменения алгоритма расчета ширины и высоты*/     
+}							/*border-box; вкючает в себя значения полей и границ*/
+.block-one{
+	height: 800px;
+	border: 1px solid black;                 /*задает границу блоков*/
+	background-image: url(./image/bgc.png);     /*суротту чакыруу*/
+	Background-size: cover;                     /*задает пропорцию на фото*/
+}
+.logo{
+	width: 175px;
+	height: 24px;
+	margin-left: 180px;
+}
+.header{
+	display: flex; 
+	justify-content: space-between;              /*выравнивание по горизантали*/
+	align-items: center;                         /* выравнивание по вертикали в одну лин*/
+	border-bottom: 1px solid white;            /*задает границу*/
+	padding: 33px 0 33px 0;                      /*внутренный отступ идет по час стр*/
+   color: #FFFFFF;
+   font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 135%;                             /*создун бийиктиги*/
+}
+.navigator ul{
+	display: flex;                                 /*делает строчный вид внутри ul*/
+	list-style: none;                              /* ..убирает маркировок знак точки*/
+}
+.navigator ul li{
+	margin-right: 47px;                             /*отступ снаружи с лева*/
+}
+.search-block{
+	margin-right: 180px;                            /*отступ снаружи с права*/
+}
+.block-one-content{
+	display: flex;
+	justify-content:space-between;                  /*выровнивание по гориз и разпределяет разномерно*/
+}
+.container{
+	width: 1200px;    			         	    	/* ширина контейнера*/
+	margin: 0 auto;   				               /* отступ снаружи*/
+   }
+.block{
+	padding-top: 30px;  			             /* внутренный отступ с верху*/
+	padding-left: 40px;    			             /* внутренный отступ с слева*/
+	padding-bottom: 30px;    		        	 /* внутренный отступ с снизу*/
+	padding-right: 40px;  			             /* внутренный отступ с права*/
+	box-sizing: border-box;
+	width: 255px;
+	height: auto;
+}
+.block p {
+   font-weight: 500px;                          /*тексттин жоондугу*/
+   font-size:21px;
+   line-height: 130%;                           /*тескттин бийиктиги*/
+	letter-spacing: -0.01pm;                    /*1em= 16px*/
+	color: #FFFFFF;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.block a{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 135%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.item-one{
+	background-color: #2378FC;               /*фонго цвет беруу*/
+	margin-bottom: 30px;
+}
+.item-two{
+	background-color:#30BCC9;
+	margin-bottom: 30px;
+}
+.item-three{
+	background-color: #FFC41E;
+}
+.item-four{
+	background-color: #F6404F;
+}
+.block-one-btns-group{
+	width: 540px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;                     /* по гориз батпай калган элементти ылдыйга жаны строкага тушуруу */
+	margin-top: 304px;
+}
+.description{
+	margin-top: 184px;                   /* отступ устунон и тышкарыдан*/
+	color: #FFFFFF;  
+}
+.description.title{                      /* description это описания*/
+	 text-transform: uppercase;          /* тамганын корунуусун озгортот д.м чонойтот*/
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 160%;
+	margin-bottom: 35px;
+}
+.description text{
+	font-size: 24px;
+	line-height: 140%;
+	margin-bottom: 25px;
+}
+.description a{
+	font-size: 16px;
+	line-height: 135%;
+	color: #FFFFFF;
+	text-decoration: none;      /* тексттин астындагы сызыкты алат*/
+	                      /*text-decoration: hower; мышканы текстке койгондо ссылка жкенин билдирип тусун озортсок болот */                    
+}
+.block a:hover{         /* hover мн бергенде мышканы текстке койгондо текстти озгортот ссылка экенин билдирип */
+	text-decoration: underline;   /*ссылка катары берилген тексттин астына сызык пайда кылуу*/
+}
+/* Block 2*/
+.block-two {
+    background: #2378FC;
+}
+.block-two-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0px;
+    color: #FFFFFF;
+}
+.block-two-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+.block-two-content ul li {
+    margin-bottom: 15px;
+}
+.block-two-content a {
+    color: #FFFFFF;
+    text-decoration: none;                 /* тексттин астындагы сызыкты очуруу*/
+}
+.block-two-content a:hover { 
+    color: #FFC41E;
+    text-decoration: underline;          /* hover мн бергенде мышканы текстке койгондо текстти озгортот ссылка экенин билдирип */
+}
+		 /* блок 3*/
+ .block-three {
+	background: #FFC41E;                  /* общий фонду беруу*/
+		padding: 75px 0;                      /* внутренный отступ (сверху и снизу 75 ) (слева и  с права 0*/
+		}
+		.block-three-content .title-block {
+			display: flex;                    /* выравнивания по горизонт*/
+			justify-content: space-between;
+		}
+		.title-block h3 {
+			margin: 0;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 130%;
+			letter-spacing: -0.01em;
+			color: #2E373B;
+		}
+		.title-block a {
+			font-weight: bold;
+			font-size: 21px;
+			line-height: 130%;
+			text-align: right;
+			letter-spacing: -0.01em;
+			text-decoration-line: underline;
+			color: #2E373B;
+		}
+		.items-box {
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-between;
+			margin-top: 55px;
+		}
+		.items-box .item {
+			width: 350px;
+		}
+		.items-box .item h2 {
+			font-weight: bold;
+			font-size: 21px;
+			line-height: 130%;
+			letter-spacing: -0.01em;
+			color: #F6404F;
+		}
+		.items-box .item .date {
+			font-size: 14px;
+			line-height: 135%;
+			color: #2E373B;
+			margin-top: 20px;
+		}
+		.sub-text {
+			font-size: 16px;
+			line-height: 135%;
+			color: #2E373B;
+		}
+		.items-box .item img {
+			width: 100%;
+			height: 240px;
+		}
+			 /* блок 4*/
+.content container{
+	background:#FAF3E3;
+}
+.content{
+	padding: 65px 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.content_photo{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	
+}
+.content_news{
+	width: 530px;
+}
+.news_headding{
+	display: flex;
+	justify-content: space-between;
+}
+.news{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-left: 5px;
+}
+.news_href a{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 130%;
+	text-align: right;
+	letter-spacing: -0.01em;
+	text-decoration-line: underline;
+    color: #2E373B;
+}
+.news_text p{
+	color: #F6404F;
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 135%;
+}
+.news_text{
+    width: 340px;
+	
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	color: #2E373B;
+}
+.content_photo_top{
+	margin-bottom: 75px;
+
+}
+.news_text_bold{
+	font-family: Plumb;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 130%;
+	/* identical to box height, or 39px */
+	letter-spacing: -0.01em;
+	/* other / black */
+	color: #2E373B;
+}
+
+.block-five{
+	background: #30BCC9;
+}
+.block-five-content{
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0px;
+	color: #FFFFFF;
+}
+.block-five-content ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.block-five-content ul li{
+	font-family: Circe;
+	margin-bottom: 10px;
+	font-family: Circe;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 135%;
+}
+.block-five-content a{
+	color: #FFFFFF;
+    text-decoration: none;
+}
+.block-five-content a:hover {
+	text-decoration: underline;
+}	
+.block-five-content h4{
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+}
+.block-five-content p{
+	color: #FFFFFF;
+}
+
